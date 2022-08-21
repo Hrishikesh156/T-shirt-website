@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Barca Store</title>
+    <link rel="icon" type="image/x-icon" href="./media/fcb_logo.png">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>  <marquee> <span><img src="./media/fcb_logo.png" alt="logo" height="30px" width="30px"></span>&nbsp;<span>Buy Jerseys of your favourite players @Discount 40%</span></marquee>
+    <nav>
+        <a><img src="./media/fcb_logo.png" alt="banner" height="60px">
+            </a>  
+        <a STYLE="text-align: left;" href="">BARCA OFFICIAL STORE</a> 
+        <a href="">KITS </a>  
+        <a href="">TRAINING</a>  
+        <a href="">PLAYERS</a>  
+        <a href="">LIFESTYLE</a> 
+        <a href="">ACCESSORIES</a>          
+        
+    </nav>
+
+    <section>
+        <img src="./media/Banner-barca.jpg" alt="banner" height="500px" width="100%" >
+    </section>
+    <article >
+       
+
+        <!-- <b><h2 style="color:#A50044;">Buy Jersey</h2></b> -->
+       
+        <div class="jersey-container">
+            <div class="jersey" >
+                <img src="./media/jersey.jpg" alt="jersey" height="400px">
+                <h3>Price: 90$</h3>
+            </div>
+            <div  class="jersey">
+                <img src="./media/away jersey1.jpeg" alt="jersey" height="400px">
+                <h3>Price: 95$</h3>
+            </div>
+            <div  class="jersey">
+                <img src="./media/away jersey 2.jfif" alt="jersey" height="400px">
+                <h3>Price: 99$</h3>
+            </div>
+        </div>
+    
+       
+       <!-- <img src="./media/away jersey1.jpeg" alt="jersey" height="400px">
+       <img src="./media/away jersey 2.jfif" alt="jersey" height="400px"> -->
+        
+        <form class="placeorder">
+          <div class="jersey-detail">
+            <h2>Place Order</h2>
+                <label for="jerseys"><h4>Number of Jerseys:</h4></label>
+                <input style=" border-radius: 5px; border:none" type="number"  name="jerseys" value="jersey" min="1" max="10" required><br> 
+              <div>
+                <h4>Please select your Jersey:</h4>
+                  <input type="radio" id="home" name="jersey" value="home" checked="checked">
+                  <label for="home" >Home</label><br>
+                  <input type="radio" id="away 1" name="jersey" value="away 1">
+                  <label for="away 1">Away(golden)</label><br>
+                  <input type="radio" id="away 2" name="jersey" value="away 2">
+                  <label for="away 2">Away(black)</label>
+              </div>
+                
+                
+                  
+                <div>
+                  <label for="size"><h4>Choose a size:</h4></label>
+                
+                  <select style="border-radius: 10px;height:30px;border:none" id="size">
+                  <option selected value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  </select>
+                </div>
+               
+           
+
+                <input type="radio" name="gender" value="male" checked="checked"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <br>
+                <br>
+
+                <label for="tagline"><h4>Add Tagline</h4></label>
+                <input style=" border-radius: 5px;border:none"  type="text" id="tagline" name="tagline"><br><br>
+              </div>
+
+
+              <div class="address-details"> <label for="email"><h4>Email ID:</h4></label>
+                <input style=" border-radius: 5px;border:none" type="text" id="email" name="email"><br>
+
+                <label for="phone"><h4>Phone Number:</h4></label>
+                <input style=" border-radius: 5px; border:none" type="phone" id="phone" name="phone"><br>
+
+               <div>
+                <label for="address"><h4>Adress:</h4></label>
+                <textarea style=" border-radius: 5px;border:none" rows="6" cols="50"> </textarea>
+               </div> 
+
+                
+
+                <input type="radio" name="payment" value="CARD"> CARD (Mastercard/Visa/Rupay)
+                <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+                <input type="radio" name="payment" value="COD"> Cash On Delivery
+               
+                <br><br>
+                <button type="submit" value="Place Order">Place Order</button>
+           
+                </div>
+               
+                <!-- <label>
+                    <span>Street Address <span class="required">*</span></span>
+                    <input type="text" name="houseadd" placeholder="House number and street name" required>
+                  </label>
+                  <label>
+                    <span>&nbsp;</span>
+                    <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+                  </label>
+                  <label>
+                    <span>Town / City <span class="required">*</span></span>
+                    <input type="text" name="city"> 
+                  </label>
+                  <label>
+                    <span>State / County <span class="required">*</span></span>
+                    <input type="text" name="city"> 
+                  </label>
+                  <label>
+                    <span>Postcode / ZIP <span class="required">*</span></span>
+                    <input type="text" name="city"> 
+                  </label>
+                  <label>
+                    <span>Phone <span class="required">*</span></span>
+                    <input type="tel" name="city"> 
+                  </label>
+                  <label>
+                    <span>Email Address <span class="required">*</span></span>
+                    <input type="email" name="city"> 
+                  </label> -->
+
+   
+                
+                </div>
+
+        </form>
+    </article>
+    
+    
+        <div class="checkout">
+          <h2>Order Details</h2>
+        
+        <h4>Order ID: #12DRER225OP</h4>
+        <h4>Jersey Type: Home</h4>
+        <h4>Quantity: 4</h4>
+        <h4>Estimate Delivery : 4 Days</h4>
+        <h4>Total cost: $360.00</h4>
+
+        </div>
+       <footer>
+          copyright@2022  FC Barcelona
+       </footer>
+
+</body>
+</html>
+
