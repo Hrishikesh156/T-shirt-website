@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Lab 4</title>
+</head>
+<body>
+    <h1>IP Lab 4</h1>
+    <h2>Personal Details using Class</h2>
+    <h4 id="info"></h4>
+    <h4 id="Greet"></h4>
+    <h2>Personal Details using Object</h2>
+    <h4 id="info1"></h4>
+  
+</body>
+</html>
+<script>
+
+var name= prompt("Enter your name:")
+var age= prompt("Enter your age:")
+var city= prompt("Enter your city:")
+var color = prompt("Enter your favorite color:")
+
+// using Person class
+class Person{
+    constructor(name,age,city,color){
+        this.name = name;
+        this.age = age;
+        this.city = city;
+        this.color = color;
+        this.display();
+        greet()
+
+    }
+    display = () =>{
+        document.getElementById("info").innerHTML = (`Hello! My name is ${this.name}. My age is ${this.age} years. I live in ${this.city}. My favourite color is ${this.color}.`)
+    }
+    
+}
+const greet = () =>{
+    document.getElementById("Greet").innerHTML = ("Nice to meet you!")
+}
+
+// using Person Object
+
+const Person2 = {
+    name:"Viraj Kumbhar",
+    age:12,
+    city:"Chembur",
+    color:"Red",
+    show_details: ()=>{
+        document.getElementById("info1").innerHTML = (`Hello! My name is ${Person2.name}. My age is ${Person2.age} years. I live in ${Person2.city}. My favourite color is ${Person2.color}.`)
+    }
+}
+
+
+const person1 = new Person(name,age,city,color)
+console.log(Person2);
+Person2.show_details();
+</script>
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Lab 4</title>
+</head>
+<body>
+    
+
+    <h1>IP Lab 4</h1>
+   
+
+  
+   
+    <h2>Personal Details of the Student</h2>
+    <h4 id="info"></h4>
+    <h4 id="Greet"></h4>
+    <h2>Academic Details of the Student</h2>
+    <h4 id="info2"></h4>
+    <label for="roll">Roll Number</label>
+    <input type="number" id="roll" placeholder="Enter your Roll number">
+    <br><br>
+    <button type="submit" onclick="return checkError()">Submit</button>
+  
+</body>
+</html>
+<script>
+
+
+class Person{
+    constructor(name,age,city){
+       
+        this.name = name;
+        this.age = age;
+        this.city = city;
+        console.log(this.name)
+       
+
+    }
+  
+    display = () =>{
+        document.getElementById("info").innerHTML = (`Hello! My name is ${this.name}. My age is ${this.age} years. I live in ${this.city}.`)
+        
+    }
+    
+}
+const greet = () =>{
+    document.getElementById("Greet").innerHTML = ("Nice to meet you!")
+}
+
+class Student extends Person{
+    constructor(){
+        var name= prompt("Enter your name:");
+        var college = prompt("Enter College name: ");
+        var class_name = prompt("Enter class name:");
+        var age= prompt("Enter your age:");
+        var city= prompt("Enter your city:");
+        super(name,age,city);
+        this.validate_roll();
+        this.display();
+        this.show(college,class_name);
+        
+
+    }
+    display(){
+        console.log("show details")
+        
+      
+    }
+    show(college,class_name){
+
+        document.getElementById("info2").innerHTML = (`My college name is ${college}. My class is ${class_name}.`)
+      
+    }
+    validate_roll(roll){
+        if(roll < 0){
+            alert("Invalid Roll number");
+            throw new Error("Invalid roll number");
+        }
+        
+    }
+}
+const checkError = () => {
+    var roll = document.getElementById('roll').value;
+    if(roll <0){
+        alert("Invalid roll number. ")
+    }
+    else{
+        alert("Valid roll number. ")
+    }
+
+}
+const person1 = new Student()
+
+</script>
+
